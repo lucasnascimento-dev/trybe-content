@@ -9,42 +9,42 @@ Os módulos são divididos em introdução ao desenvolvimento de software, front
 
 Seção 1: Introdução - Unix & Shell
 
-[ ] 1.1: Unix & Shell- Part 1
-[ ] 1.2: Unix & Shell- Part 2
+- [ ] 1.1: Unix & Shell- Part 1
+- [ ] 1.2: Unix & Shell- Part 2
 
 Seção 2: Git & GitHub
 
-[ ] 2.1: O que é e para que serve?
-[ ] 2.2: Entendendo os comandos
+- [ ] 2.1: O que é e para que serve?
+- [ ] 2.2: Entendendo os comandos
 
 Seção 3: Introdução à HTML & CSS
 
-[ ] 3.1: HTML & CSS - Estruturas de página
-[ ] 3.2: HTML & CSS - Primeiros passos em CSS
-[ ] 3.3: HTML & CSS - Seletores e posicionamento
-[ ] 3.4: HTML Semântico
-[ ] 3.5: Projeto - Lessons Learned
+- [ ] 3.1: HTML & CSS - Estruturas de página
+- [ ] 3.2: HTML & CSS - Primeiros passos em CSS
+- [ ] 3.3: HTML & CSS - Seletores e posicionamento
+- [ ] 3.4: HTML Semântico
+- [ ] 3.5: Projeto - Lessons Learned
 
 Seção 4: Introdução à JavaScript
 
-[ ] 4.1: JavaScript - primeiros passos
-[ ] 4.2: JavaScript - Array e loop For
-[ ] 4.3: JavaScript - Lógica de Programação e Algoritmo
-[ ] 4.4: JavaScript - Objetos e funções
-[ ] 4.5: JavaScript ES6 - let, const, arrow functions e template literals
-[ ] 4.6: Projeto - Playground Functions
+- [ ] 4.1: JavaScript - primeiros passos
+- [ ] 4.2: JavaScript - Array e loop For
+- [ ] 4.3: JavaScript - Lógica de Programação e Algoritmo
+- [ ] 4.4: JavaScript - Objetos e funções
+- [ ] 4.5: JavaScript ES6 - let, const, arrow functions e template literals
+- [ ] 4.6: Projeto - Playground Functions
 
 Seção 5: JavaScript: DOM, Eventos e Web Storage
 
-[ ] 5.1: JavaScript - DOM e seletores
-[ ] 5.2: JavaScript - Trabalhando com elementos
-[ ] 5.3: JavaScript - Eventos
-[ ] 5.4: JavaScript - Web Storage
-[ ] 5.5: Projeto - Arte com Pixels
-[ ] 5.6: Projeto Bônus
+- [ ] 5.1: JavaScript - DOM e seletores
+- [ ] 5.2: JavaScript - Trabalhando com elementos
+- [ ] 5.3: JavaScript - Eventos
+- [ ] 5.4: JavaScript - Web Storage
+- [ ] 5.5: Projeto - Arte com Pixels
+- [ ] 5.6: Projeto Bônus
 
 Seção 6: HTML & CSS: Forms, Flexbox e Responsivo
 
-[ ] 6.1: HTML & CSS - Forms
-[ ] 6.2: Bibliotecas JavaScript e Frameworks CSS
-[ ] 6.3: CSS Flexbox - Parte 1
+- [ ] 6.1: HTML & CSS - Forms
+- [ ] 6.2: Bibliotecas JavaScript e Frameworks CSS
+- [ ] 6.3: CSS Flexbox - Parte 1
