@@ -1,3 +1,4 @@
+/*--------------------ITEM 1 DO EXERCÍCIO-------------------- */
 ol li{
     background-color: yellow;   
 }
@@ -8,4 +9,18 @@ ol li:nth-child(even){
 
 ol li:nth-child(odd){
     text-transform: uppercase;
+}
+/*--------------------ITEM 1 DO EXERCÍCIO-------------------- */
+
+h1,
+h2,
+h3{
+    color: red;   
+}
+
+h1 em,
+h2 em,
+h3 em{
+    font-size: 40px;
+    border: 1px black solid;
 }
