@@ -1,3 +1,22 @@
 div:hover{
-    border: 2px solid blue;
+    border: 2px solid black;
+}
+#corPrimaria{
+    background-color: red;
+}
+
+#corSecundaria{
+    background-color: green;
+}
+
+#corComplementar{
+    background-color: purple;
+}
+
+#corEscura{
+    background-color: darkblue;
+}
+
+#corClara{ 
+    background-color: aquamarine;
 }
