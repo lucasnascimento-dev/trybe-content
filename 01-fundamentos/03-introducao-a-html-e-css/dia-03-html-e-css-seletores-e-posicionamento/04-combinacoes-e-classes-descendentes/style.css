@@ -12,6 +12,7 @@ ol li:nth-child(odd){
 }
 /*--------------------ITEM 1 DO EXERCÍCIO-------------------- */
 
+/*--------------------ITEM 2 DO EXERCÍCIO-------------------- */
 h1,
 h2,
 h3{
@@ -24,3 +25,14 @@ h3 em{
     font-size: 40px;
     border: 1px black solid;
 }
+/*--------------------ITEM 2 DO EXERCÍCIO-------------------- */
+
+/*--------------------ITEM 3 DO EXERCÍCIO-------------------- */
+li{
+    font-size: 20px;
+}
+li em{
+    font-weight: bolder;
+}
+/*--------------------ITEM 3 DO EXERCÍCIO-------------------- */
+
