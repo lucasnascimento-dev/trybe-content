@@ -25,3 +25,9 @@ div:hover{
 h3{
     color: yellowgreen;
 }
+
+#corPrimaria h3,
+#corComplementar h3,
+#corClara h3{
+    font-style: italic;
+}
