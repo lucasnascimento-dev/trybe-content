@@ -31,8 +31,15 @@ h3 em{
 li{
     font-size: 20px;
 }
+
 li em{
     font-weight: bolder;
 }
 /*--------------------ITEM 3 DO EXERCÍCIO-------------------- */
+#linguagens li:not(:nth-child(n+4)){
+    color: blue;
+}
 
+.java{
+    background-color: pink;
+}
