@@ -1,27 +1,27 @@
 # trybeProjects
 Trybe
 
-Este repositório contém todas as atividades de aprendizagem desenvolvidas por Lucas Nascimento, durante o periodo de aprendizagem na Trybe.
+Este repositório contém todas as atividades desenvolvidas por Lucas Nascimento, durante o periodo de aprendizagem na Trybe.
 
-"O curso da Trybe conta com mais de 1.500 horas de aulas online e ao vivo, voltado para a pessoa que quer construir uma carreira na área de tecnologia."
+"O curso conta com mais de 1.500 horas de aulas online e ao vivo, voltado para a pessoa que deseja construir uma carreira na área de tecnologia."
 
 Os módulos são divididos em introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades socio-comportamentais.
 
 Seção 1: Introdução - Unix & Shell
 
-- [ ] 1.1: Unix & Shell- Part 1
-- [ ] 1.2: Unix & Shell- Part 2
+- [x] 1.1: Unix & Shell- Part 1
+- [x] 1.2: Unix & Shell- Part 2
 
 Seção 2: Git & GitHub
 
-- [ ] 2.1: O que é e para que serve?
-- [ ] 2.2: Entendendo os comandos
+- [x] 2.1: O que é e para que serve?
+- [x] 2.2: Entendendo os comandos
 
 Seção 3: Introdução à HTML & CSS
 
-- [ ] 3.1: HTML & CSS - Estruturas de página
-- [ ] 3.2: HTML & CSS - Primeiros passos em CSS
-- [ ] 3.3: HTML & CSS - Seletores e posicionamento
+- [x] 3.1: HTML & CSS - Estruturas de página
+- [x] 3.2: HTML & CSS - Primeiros passos em CSS
+- [x] 3.3: HTML & CSS - Seletores e posicionamento
 - [ ] 3.4: HTML Semântico
 - [ ] 3.5: Projeto - Lessons Learned
 
