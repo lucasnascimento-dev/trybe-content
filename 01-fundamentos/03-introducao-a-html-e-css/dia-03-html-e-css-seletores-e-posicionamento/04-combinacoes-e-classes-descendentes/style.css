@@ -1,0 +1,74 @@
+/*--------------------ITEM 1 DO EXERCÍCIO-------------------- */
+ol li{
+    background-color: yellow;   
+}
+
+ol li:nth-child(even){
+    color: green;
+}
+
+ol li:nth-child(odd){
+    text-transform: uppercase;
+}
+/*--------------------ITEM 1 DO EXERCÍCIO-------------------- */
+
+/*--------------------ITEM 2 DO EXERCÍCIO-------------------- */
+h1,
+h2,
+h3{
+    color: red;   
+}
+
+h1 em,
+h2 em,
+h3 em{
+    font-size: 40px;
+    border: 1px black solid;
+}
+/*--------------------ITEM 2 DO EXERCÍCIO-------------------- */
+
+/*--------------------ITEM 3 DO EXERCÍCIO-------------------- */
+li{
+    font-size: 20px;
+}
+
+li em{
+    font-weight: bolder;
+}
+/*--------------------ITEM 3 DO EXERCÍCIO-------------------- */
+
+/*--------------------ITEM 4 DO EXERCÍCIO-------------------- */
+#linguagens li:not(:nth-child(n+4)){
+    color: blue;
+}
+
+.java{
+    background-color: pink;
+}
+/*--------------------ITEM 4 DO EXERCÍCIO-------------------- */
+
+/*--------------------ITEM 5 DO EXERCÍCIO-------------------- */
+#aliados li a:hover{
+    font-weight: bolder;
+}
+
+#aliados li a:hover[href*="stackoverflow"]{
+    color: orange;
+}
+
+#aliados li a:hover[href*="w3schools"]{
+    color: green;
+}
+
+#aliados li a:hover[href*="developer.mozilla"]{
+    color: black;
+}
+
+#aliados li a:hover[href*="devdocs"]{
+    color: yellow;
+}
+
+#aliados li a:hover[href*="betrybe"]{
+    color: green;
+}
+/*--------------------ITEM 5 DO EXERCÍCIO-------------------- */
