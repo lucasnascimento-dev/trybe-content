@@ -36,6 +36,8 @@ li em{
     font-weight: bolder;
 }
 /*--------------------ITEM 3 DO EXERCÍCIO-------------------- */
+
+/*--------------------ITEM 4 DO EXERCÍCIO-------------------- */
 #linguagens li:not(:nth-child(n+4)){
     color: blue;
 }
@@ -43,3 +45,30 @@ li em{
 .java{
     background-color: pink;
 }
+/*--------------------ITEM 4 DO EXERCÍCIO-------------------- */
+
+/*--------------------ITEM 5 DO EXERCÍCIO-------------------- */
+#aliados li a:hover{
+    font-weight: bolder;
+}
+
+#aliados li a:hover[href*="stackoverflow"]{
+    color: orange;
+}
+
+#aliados li a:hover[href*="w3schools"]{
+    color: green;
+}
+
+#aliados li a:hover[href*="developer.mozilla"]{
+    color: black;
+}
+
+#aliados li a:hover[href*="devdocs"]{
+    color: yellow;
+}
+
+#aliados li a:hover[href*="betrybe"]{
+    color: green;
+}
+/*--------------------ITEM 5 DO EXERCÍCIO-------------------- */
