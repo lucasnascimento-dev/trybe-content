@@ -1,4 +1,4 @@
-# trybeProjects
+# trybe-content
 Trybe
 
 Este repositório contém todas as atividades desenvolvidas por Lucas Nascimento, durante o periodo de aprendizagem na Trybe.
