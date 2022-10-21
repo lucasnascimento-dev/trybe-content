@@ -23,11 +23,11 @@ Seção 3: Introdução à HTML & CSS
 - [x] 3.2: HTML & CSS - Primeiros passos em CSS
 - [x] 3.3: HTML & CSS - Seletores e posicionamento
 - [x] 3.4: HTML Semântico
-- [ ] 3.5: Projeto - Lessons Learned
+- [x] 3.5: Projeto - Lessons Learned
 
 Seção 4: Introdução à JavaScript
 
-- [ ] 4.1: JavaScript - primeiros passos
+- [x] 4.1: JavaScript - primeiros passos
 - [ ] 4.2: JavaScript - Array e loop For
 - [ ] 4.3: JavaScript - Lógica de Programação e Algoritmo
 - [ ] 4.4: JavaScript - Objetos e funções
