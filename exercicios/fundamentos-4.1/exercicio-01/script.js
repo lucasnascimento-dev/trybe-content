@@ -33,4 +33,8 @@ divisao = a/b;
 console.log('a / b = ' + divisao)
 //-------------------------PROGRAMA 4 (divisão)-------------------------
 
+//-------------------------PROGRAMA 5 (resto da divisão)-------------------------
+resto = a%b;
+console.log('a * b = ' + resto)
+//-------------------------PROGRAMA 5 (resto da divisão)-------------------------
 
