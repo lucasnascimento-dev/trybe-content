@@ -23,4 +23,9 @@ subtracao = a-b;
 console.log('a - b = ' + subtracao)
 //-------------------------PROGRAMA 2 (subtração)-------------------------
 
+//-------------------------PROGRAMA 3 (multiplicação)-------------------------
+multiplicacao = a*b;
+console.log('a * b = ' + mul)
+//-------------------------PROGRAMA 3 (multiplicação)-------------------------
+
 
