@@ -9,7 +9,7 @@
 //     Módulo (a % b)
 
 //----------------------DEFINIÇÃO DE CONSTANTES----------------------
-let a =3;
+let a =8;
 let b = 4;
 //----------------------DEFINIÇÃO DE CONSTANTES----------------------
 
@@ -25,7 +25,12 @@ console.log('a - b = ' + subtracao)
 
 //-------------------------PROGRAMA 3 (multiplicação)-------------------------
 multiplicacao = a*b;
-console.log('a * b = ' + mul)
+console.log('a * b = ' + multiplicacao)
 //-------------------------PROGRAMA 3 (multiplicação)-------------------------
+
+//-------------------------PROGRAMA 4 (divisão)-------------------------
+divisao = a/b;
+console.log('a / b = ' + divisao)
+//-------------------------PROGRAMA 4 (divisão)-------------------------
 
 
