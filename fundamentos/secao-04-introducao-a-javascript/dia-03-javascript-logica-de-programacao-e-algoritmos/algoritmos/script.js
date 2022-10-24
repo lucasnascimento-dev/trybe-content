@@ -44,3 +44,16 @@ else {
     console.log("valor menor que 16")//<<<<--BABY STEP 7 / 7.1-----------------
 }
 //---------------------------------BABY STEP 5---------------------------------
+
+/*
+ Quando estiver escrevendo um algoritmo, sempre responda às seguintes perguntas:
+
+    Eu resolvi o problema?
+    Havia outras maneiras de resolver o problema?
+    A maneira que eu escolhi foi a mais eficiente possível?
+    Seria possível inverter ou retirar algum passo?
+    Se eu fosse um computador, conseguiria entender todas as instruções?
+
+Lembre-se sempre: se você travar em algum exercício, recomece seu 
+raciocínio com baby steps! 
+*/
