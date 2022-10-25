@@ -11,5 +11,4 @@ let info = {
 };
 info.recorrente = 'sim';
 
-console.log(info['recorrente'])
 console.log(info)
