@@ -28,7 +28,7 @@ Seção 3: Introdução à HTML & CSS
 Seção 4: Introdução à JavaScript
 
 - [x] 4.1: JavaScript - primeiros passos
-- [ ] 4.2: JavaScript - Array e loop For
+- [x] 4.2: JavaScript - Array e loop For
 - [ ] 4.3: JavaScript - Lógica de Programação e Algoritmo
 - [ ] 4.4: JavaScript - Objetos e funções
 - [ ] 4.5: JavaScript ES6 - let, const, arrow functions e template literals
