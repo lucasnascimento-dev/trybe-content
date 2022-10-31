@@ -27,3 +27,7 @@
        // Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta. 
        const terceiroFilho = elementoOndeVoceEsta.nextElementSibling;
        console.log(terceiroFilho)
+
+       // Agora acesse o terceiroFilho a partir de pai. 
+       const terceiroFilho2 = pai.firstElementChild.nextElementSibling.nextElementSibling
+       console.log(terceiroFilho2)
