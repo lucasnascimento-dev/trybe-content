@@ -13,10 +13,24 @@ existe uma classe tech que está com o atributo transform alterado no eixo Y
 // - Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
 //  - Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
 
-const changeClass = (event) => {
-  techElement = document.getElementsByClassName('tech')
-  
+const handleChangeTech = (event) => {
+
+  const techElement = document.querySelector('.tech');
+
+  techElement.classList.remove('tech');
+
+  event.target.classList.add('tech');
+
+  input.value = '';
+
 }
+
+
+firstLi.addEventListener('click', handleChangeTech);
+
+secondLi.addEventListener('click', handleChangeTech);
+
+thirdLi.addEventListener('click', handleChangeTech);
 
 // - Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';

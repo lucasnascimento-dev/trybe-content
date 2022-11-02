@@ -11,8 +11,16 @@ ou false, se não for.
         Retorno esperado: false
 */
 
-let palavra = "arara";
+let word = "arara";
+//----------01234
+function checkPalindrome (word) {
+    for (let index in word) {
+        if (word[index] != word[(word.length-1)-index]){
+            return false;
+        } else {
+            return true;
+        }
+    }
+}
 
-// function palindrome (palavra) {
-//     if 
-// }
+console.log(checkPalindrome(word))
