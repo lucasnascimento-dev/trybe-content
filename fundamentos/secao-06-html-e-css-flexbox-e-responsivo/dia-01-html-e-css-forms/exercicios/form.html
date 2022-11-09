@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>Header da página</h1></header>
+    <form action="">
+        <fieldset>
+            <label for="fullName">
+                <p>Nome: <input type="text" name="nome" id="fullName" maxlength="40" minlength="10"></p>
+            </label>
+            <label for="email">
+                <p>Email:  <input type="email" id="email" maxlength="50" minlength="10"></p>
+            </label>
+            <label for="opcao1">
+                <input type="radio" name="opcao" id="opcao1"> Cidade
+            </label>
+            <label for="opcao2">
+                <input type="radio" name="opcao" id="opcao2"> Campo
+            </label>
+            <label for="opcao3">
+                <input type="radio" name="opcao" id="opcao3"> Praia
+            </label>
+            <label for="opcao4">
+                <input type="radio" name="opcao" id="opcao4"> Montanhas
+            </label><br>
+            <label for="descricao">
+                <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p> 
+                <textarea resize="none" name="descricao" id="descricao" cols="53" rows="10" maxlength="500"></textarea>
+            </label>
+            <label for="data">
+                <p>Qual a melhor data para realizar sua viagem? <input type="date" name="data" id="data"></p>
+            </label>
+            <label for="concordancia">
+                <p>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe? <input type="checkbox" name="concordancia" id="concordo1"></p>
+                <p>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros. <input type="checkbox" name="concordancia" id="concordo2"></p>
+            </label>
+        </fieldset>
+        <button type="submit" id="sendButton">Enviar</button>
+        <button type="reset">Clear</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
