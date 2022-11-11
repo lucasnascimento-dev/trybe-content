@@ -1,0 +1,17 @@
+header{
+    border: green 2px solid;
+    margin: auto;
+}
+
+section {
+    width: 230px;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+}
+
+button {
+    display: block;
+    margin: auto;
+    width: 80px;
+}
