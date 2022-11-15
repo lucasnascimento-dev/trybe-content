@@ -75,3 +75,16 @@ const createDaysOfTheWeek = () => {
   }
 
   displayHolidays();
+
+  //parte 4
+  const createFridayButton = (buttonName) => {
+    let buttonContainer = document.querySelector('.buttons-container')
+    let newButton = document.createElement('button');
+    let newButtonId = 'btn-friday'
+
+    newButton.innerHTML = buttonName;
+    newButton.id = newButtonId; 
+    buttonContainer.appendChild(newButton);
+  }
+
+  createFridayButton('Nova Sexta');
