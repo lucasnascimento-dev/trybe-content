@@ -87,4 +87,21 @@ const createDaysOfTheWeek = () => {
     buttonContainer.appendChild(newButton);
   }
 
-  createFridayButton('Nova Sexta');
+  createFridayButton('Sexta-feira');
+
+  //parte 5
+  const DisplayFridays = (fridaysArray) => {
+    let getFridayButton = document.getElementById('btn-friday');
+    let fridays = document.getElementsByClassName('friday');
+    let newFridayText = 'SEXTOU o/'
+    
+    getFridayButton.addEventListener('click', () => {
+      for (let index = 0; index < fridays.length; index += 1) {
+        (fridays[index].innerHTML !== newFridayText) ?
+        fridays[index].innerHTML = newFridayText :
+        fridays[index].innerHTML = fridaysArray[index];
+      }
+    });
+  }
+
+  DisplayFridays(decemberDaysList);
