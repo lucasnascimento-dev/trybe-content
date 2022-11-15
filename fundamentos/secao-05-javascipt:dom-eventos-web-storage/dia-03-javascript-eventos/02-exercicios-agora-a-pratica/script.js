@@ -178,3 +178,34 @@ const createDaysOfTheWeek = () => {
     });
   }
   setDayColor();
+
+  // bônus
+
+  const addNewTask = () => {
+    let getInputField = document.querySelector('#task-input'); 
+    let addInputButton = document.querySelector('#btn-add');
+    let getTaskList = document.querySelector('.task-list');
+
+    addInputButton.addEventListener('click', () => {
+      if (getInputField.value.length > 0) {
+        let newLi = document.createElement('li');
+        newLi.innerText = getInputField.value;
+        getTaskList.appendChild(newLi);
+        getInputField.value = '';
+      } else {
+        alert('Error: Digite ao menos 1 caractere.'); // Cria um alerta para informar que não tem texto digitado
+      }
+    });
+    getInputField.addEventListener('keyup', (event) => {
+      if (event.key === 'Enter' && getInputField.value.length > 0) {
+        let newLi = document.createElement('li');
+        newLi.innerText = getInputField.value;
+
+        getTaskList.appendChild(newLi);
+        getInputField.value = '';
+      } else {
+        alert('Error: Digite ao menos 1 caractere.');
+      }
+    });
+  }
+  addNewTask()
