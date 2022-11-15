@@ -106,20 +106,44 @@ const createDaysOfTheWeek = () => {
 
   DisplayFridays(decemberDaysList);
 
-  //parte 6
+  // parte 6
   const dayMouseOver = (target) => {
-    let days = document.getElementById('days');
+    const days = document.getElementById('days');
     days.addEventListener('mouseover', (event) => {
       event.target.style.fontSize = '30px';
       event.target.style.fontWeight = '600'
     })
   }
   const dayMouseOut = (target) => {
-    let days = document.getElementById('days');
+    const days = document.getElementById('days');
     days.addEventListener('mouseout', (event) => {
       event.target.style.fontSize = '20px';
       event.target.style.fontWeight = '200'
     })
   }
   dayMouseOver();
-  dayMouseOut()
+  dayMouseOut();
+
+  // parte 7
+  const addMyTasks = (task) => {
+    const tasksContainer = document.querySelector('.my-tasks');
+    let taskName = document.createElement('span');
+    console.log(tasksContainer)
+
+    taskName.innerHTML = task;
+    tasksContainer.appendChild(taskName);
+  }
+
+  addMyTasks('Projeto')
+
+  // Parte 8
+  const getTaskColor = (color) => {
+    let tasksContainer = document.querySelector('.my-tasks');
+    let newTask = document.createElement('div'); //criando um a nova div
+    
+    newTask.className = 'task'; // adicionando classe para a div
+    newTask.style.backgroundColor = color; // Atribuindo cor ao background da div criada
+
+    tasksContainer.appendChild(newTask); // Adicionando nova task criada à task container
+  }
+  getTaskColor('green')
