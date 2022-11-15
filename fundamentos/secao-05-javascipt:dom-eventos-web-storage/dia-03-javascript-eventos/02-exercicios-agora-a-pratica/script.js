@@ -155,12 +155,26 @@ const createDaysOfTheWeek = () => {
       (event.target.className !== 'task selected') ? 
       event.target.className = 'task selected' : 
       event.target.className = 'task';
+      console.log(tarefa)
     })
   }
   selectTask();
 
   // Parte 10
   const setDayColor = () => {
-    
+    const selectedTask = document.getElementsByClassName('selected task') //retorna array com 'task selected'
+    const days = document.querySelector('#days'); // seleciona a ul days
+    const taskDiv = document.querySelector('.task'); // seleciona primeiro elemento com class task
+    const taskColor = taskDiv.style.backgroundColor; //guarda a cor do task em task color
+
+    days.addEventListener('click', (event) => {
+      let eventTargetColor = event.target.style.color;
+      if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
+        let color = selectedTask[0].style.backgroundColor;
+        event.target.style.color = color;
+      } else if (eventTargetColor === taskColor) {
+        event.target.style.color = taskColor;
+      }
+    });
   }
-  
+  setDayColor();
