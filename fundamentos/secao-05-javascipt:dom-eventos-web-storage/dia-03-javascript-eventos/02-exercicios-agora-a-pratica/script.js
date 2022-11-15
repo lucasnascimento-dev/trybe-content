@@ -128,7 +128,6 @@ const createDaysOfTheWeek = () => {
   const addMyTasks = (task) => {
     const tasksContainer = document.querySelector('.my-tasks');
     let taskName = document.createElement('span');
-    console.log(tasksContainer)
 
     taskName.innerHTML = task;
     tasksContainer.appendChild(taskName);
@@ -138,8 +137,8 @@ const createDaysOfTheWeek = () => {
 
   // Parte 8
   const getTaskColor = (color) => {
-    let tasksContainer = document.querySelector('.my-tasks');
-    let newTask = document.createElement('div'); //criando um a nova div
+    const tasksContainer = document.querySelector('.my-tasks');
+    const newTask = document.createElement('div'); //criando um a nova div
     
     newTask.className = 'task'; // adicionando classe para a div
     newTask.style.backgroundColor = color; // Atribuindo cor ao background da div criada
@@ -147,3 +146,21 @@ const createDaysOfTheWeek = () => {
     tasksContainer.appendChild(newTask); // Adicionando nova task criada à task container
   }
   getTaskColor('green')
+
+  // Parte 9
+  const selectTask = () => {
+    const tarefa = document.querySelector('.task')
+    
+    tarefa.addEventListener('click', (event) => {
+      (event.target.className !== 'task selected') ? 
+      event.target.className = 'task selected' : 
+      event.target.className = 'task';
+    })
+  }
+  selectTask();
+
+  // Parte 10
+  const setDayColor = () => {
+    
+  }
+  
