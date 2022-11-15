@@ -19,14 +19,11 @@ const createDaysOfTheWeek = () => {
   const createDaysOfTheMonth = () => {
     // const getDayList = document.querySelector('#days')
     const getDayList = document.getElementById('days')
-    console.log(getDayList)
-
     for (let index = 0; index < decemberDaysList.length; index += 1) {
       let day = decemberDaysList[index];
       let dayItem = document.createElement('li')
       
       dayItem.innerHTML = day;
-      console.log(dayItem)
       if (day === 24 || day === 31) {
         //classe holiday 
         dayItem.className = 'day holiday';
@@ -46,18 +43,35 @@ const createDaysOfTheWeek = () => {
       }
     }
   }
-
   createDaysOfTheMonth();
-
+  
   const createHolidayButton = (buttonName) => {
-    let buttonContainer = document.querySelector('.buttons-container');
-    let newButton = document.createElement('button');
-    let newButtonId = 'btn-holiday';
-
+    const buttonContainer = document.querySelector('.buttons-container');
+    const newButton = document.createElement('button');
+    const newButtonId = 'btn-holiday';
+    
     newButton.innerHTML = buttonName;
     newButton.id = newButtonId;
-
+    
     buttonContainer.appendChild(newButton);
   }
+  createHolidayButton('Feriados');  
+  
+  const displayHolidays = () => {
+    let getHolidayButton = document.querySelector('#btn-holiday');
+    let getHolidays = document.querySelectorAll('.holiday')
+    let backgroundColor = 'rgb(238,238,238)';
+    let setNewColor = 'white';
+  
+      getHolidayButton.addEventListener('click', () => {
+      for (let index = 0; index < getHolidays.length; index += 1) {
+        if (getHolidays[index].style.backgroundColor === setNewColor) {
+          getHolidays[index].style.backgroundColor = backgroundColor;
+        } else {
+          getHolidays[index].style.backgroundColor = setNewColor;
+        }
+      }
+    });
+  }
 
-  createHolidayButton('Feriados');
+  displayHolidays();
