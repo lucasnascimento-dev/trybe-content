@@ -105,3 +105,21 @@ const createDaysOfTheWeek = () => {
   }
 
   DisplayFridays(decemberDaysList);
+
+  //parte 6
+  const dayMouseOver = (target) => {
+    let days = document.getElementById('days');
+    days.addEventListener('mouseover', (event) => {
+      event.target.style.fontSize = '30px';
+      event.target.style.fontWeight = '600'
+    })
+  }
+  const dayMouseOut = (target) => {
+    let days = document.getElementById('days');
+    days.addEventListener('mouseout', (event) => {
+      event.target.style.fontSize = '20px';
+      event.target.style.fontWeight = '200'
+    })
+  }
+  dayMouseOver();
+  dayMouseOut()
