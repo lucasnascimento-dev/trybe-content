@@ -29,6 +29,7 @@
   }
   figure {
       margin: 0;
+      margin-bottom: 30px;
   }
   figcaption {
     font-size: .8em;
