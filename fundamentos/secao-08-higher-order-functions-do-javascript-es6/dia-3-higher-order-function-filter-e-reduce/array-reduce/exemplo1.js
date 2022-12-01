@@ -52,6 +52,5 @@ const sum = (acc, curr) => (
     (curr % 2 === 0) ? acc + curr : acc
 );
 
-const sumNumbers2 = (array) => array.reduce(sum, 0);
-// const sum = numbers4.reduce(sumEvenNumbers, 0);
+const sumNumbers2 = (array) => array.reduce(sum, 0);// sum pode ser outras funções.
 console.log(sumNumbers2(numbers4)); // 85

@@ -75,8 +75,8 @@ const estudantes = [
 
 const report = estudantes.map((aluno) => ({
     name: aluno.nome,
-    matertia: aluno.materias.reduce((acc, curr) => acc.nota > curr.nota ? acc : curr
-    ).name
+    matertia: aluno.materias
+    .reduce((acc, curr) => acc.nota > curr.nota ? acc : curr).name
 }));
 
 console.log(report)
