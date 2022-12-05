@@ -73,8 +73,17 @@ const estudantes = [
     },
   ];
 
-  const allNames = estudantes.filter((infoStudent) =>(
-    infoStudent.turno === 'Manhã'))
-    .map((infoStudent) => (`${infoStudent.nome} ${infoStudent.sobrenome}`))
+  const infoStudent = () => {
+    const turnoEstudante = estudantes.filter((estudante) => console.log(estudante));
+    console.log(turnoEstudante.turno === 'Manhã')  
+  }
 
-  console.log(allNames)
+  
+//   const allNames = estudantes.forEach((infoStudent)  => {
+//     return `${estudantes.nome} ${estudantes.sobrenome}`;
+// })
+  
+
+
+  console.log(infoStudent())
+
