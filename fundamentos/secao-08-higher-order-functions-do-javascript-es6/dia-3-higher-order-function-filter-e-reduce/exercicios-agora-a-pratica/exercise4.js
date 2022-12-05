@@ -77,9 +77,3 @@ const fantasyOrScienceFictionAuthors = () => {
 }
 
 console.log(fantasyOrScienceFictionAuthors())
-
-// .filter((generos)
-// if (generos.genre === 'Ficção Científica' || 
-// books.genre === 'Fantasia') {
-//     return generos
-// }
