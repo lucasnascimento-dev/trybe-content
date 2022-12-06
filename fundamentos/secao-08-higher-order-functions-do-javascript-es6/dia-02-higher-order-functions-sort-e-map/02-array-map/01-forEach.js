@@ -80,12 +80,9 @@ const infoStudent = () => {
     if (infoStudent.turno === 'Manhã') {
       allNameStudents.push(`${infoStudent.nome} ${infoStudent.sobrenome}`)
       return allNameStudents;
-  }
+    }
 })
 }
-
-  
-
 
   console.log(infoStudent())
 
