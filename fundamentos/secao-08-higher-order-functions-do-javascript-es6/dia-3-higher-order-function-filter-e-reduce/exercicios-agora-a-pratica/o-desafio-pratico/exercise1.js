@@ -67,7 +67,7 @@ const countries = [
     }
   ];
 
-  const expectedResult = 120797034;
+const expectedResult = 120797034;
 
 const getPopulation = () => {
     return countries.reduce((acc, curr) => acc + curr.population, 0)
