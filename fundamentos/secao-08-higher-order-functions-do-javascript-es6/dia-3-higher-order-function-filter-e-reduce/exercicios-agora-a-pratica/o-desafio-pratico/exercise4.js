@@ -7,7 +7,6 @@ const names = [
   const expectedResult = 20;
   
   const lettersArray = names.join('').toLocaleLowerCase().split('')
-  console.log(lettersArray)
 
   const countA = () => {
     return lettersArray.reduce((acc, curr) => 
