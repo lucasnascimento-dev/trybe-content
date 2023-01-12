@@ -1,0 +1,13 @@
+{
+  "name": "dia-02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1-o-que-e-codigo-assincrono.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
