@@ -1,0 +1,53 @@
+version: "3"
+services:
+  frontend:
+    build: frontend/
+    restart: on-failure
+    ports:
+      - 3000:3000
+    depends_on:
+      - backend
+  backend:
+    build: backend/
+    restart: on-failure
+    ports:
+      - 3001:3001
+    environment:
+      - DB_HOST=database
+    depends_on:
+      - database
+  database:
+    image: betrybe/docker-compose-example-database:v1
+    restart: on-failure
+
+# ---------------------------SERVICES
+# No caso do service front e back especificamos a pasta que contém
+# o arquigo Dockerfile a ser bildado. Já no database indicamos a imagem
+# a ser executadacaso exista ou baixada e executada.
+
+# -----------------------MAPEAMENTO DE PORTAS
+# ports indicaca o mapeamento de porta para cada serviço, o número da onde o
+# esquerda representa a porta local 
+
+# ----------------------CASO ENCONTRE UM PROBLEMA
+# o Compose nos permite configurar uma política de reinicialização, as
+# 4 políticas existentes são:
+# no : define que o container não reiniciará automaticamente (Padrão);
+
+# on-failure: define que o container será reiniciado caso ocorra alguma
+# falha apontada pelo exit code, diferente de zero; 
+
+# always: especifica que sempre que o serviço parar, seja por um falha ou
+# porque ele simplesmente finalizou sua execução, ele deverá ser reiniciado;
+
+# unless-stopped: define que o container sempre será reiniciado, a menos que
+# utilizemos o comando docker stop <container> manualmente. 
+#---------------------------------------------------------------
+
+# ------------------------------CONFIGURANDO O DOCKER COMPOSE
+# -Três serviços, um deles usando uma imagem Docker pronta e dois com
+# arquivo Dockerfile;
+# -Mapeamos as portas de conexão;
+# -Configuramos a política de reinicialização;
+# -Criamos uma variável de ambiente;
+# -Definimos a ordem de subida dos serviços.
