@@ -1,5 +1,4 @@
-const weight = 80
-const height = 1.78
+const ask = require('./util/ask')
 
 const bmiCalculation = (weight, height) => {
   console.log(`wheigth: ${weight} height:${height}`);
@@ -8,6 +7,9 @@ const bmiCalculation = (weight, height) => {
 }
 
 function main() {
+  const weight = ask("What’s your weight?");
+  const height = ask("What’s your height?");
+
   const bmi = bmiCalculation(weight, height);
   console.log(`BMI: ${bmi.toFixed(2)}`)
 }
