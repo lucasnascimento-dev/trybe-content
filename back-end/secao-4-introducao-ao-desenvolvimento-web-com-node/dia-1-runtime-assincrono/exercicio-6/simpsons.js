@@ -19,9 +19,19 @@ async function getSimpsomId(idSearch) {
   return characterChosen
 }
 
+async function removeCharacter(a, b) {
+  const fileContent = await fs.readFile('./simpsons.json', 'utf-8')
+  const simpsons = JSON.parse(fileContent)
+
+  const characterChosen = simpsons
+    .filter((element) => Number(element.id) !== a && Number(element.id) !== b );
+  await fs.writeFile('./simpsons.json', JSON.stringify(characterChosen));
+}
+
 main = () => {
-  readAll()
-  getSimpsomId(2).then((simpson) => console.log(simpson))
+  //readAll()
+  //getSimpsomId(2).then((simpson) => console.log(simpson))
+  removeCharacter(10, 6)
 }
 
 main();
