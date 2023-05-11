@@ -5,12 +5,23 @@ async function readAll() {
   const simpsons = JSON.parse(fileContent)
   const simpsonsEnumerated = simpsons.map(({id, name}) => `${id} - ${name}`)
 
-  const result = simpsonsEnumerated.forEach(element => console.log(element));
-  console.log(result)
+  simpsonsEnumerated.forEach(element => console.log(element));
+}
+
+async function getSimpsomId(idSearch) {
+  const fileContent = await fs.readFile('./simpsons.json', 'utf-8')
+  const simpsons = JSON.parse(fileContent)
+
+  const characterChosen = simpsons.find((element) => Number(element.id) === idSearch);
+  if (!characterChosen) {
+    throw new Error('id não encontrado')
+  }
+  return characterChosen
 }
 
 main = () => {
-  readAll();
+  readAll()
+  getSimpsomId(2).then((simpson) => console.log(simpson))
 }
 
 main();
