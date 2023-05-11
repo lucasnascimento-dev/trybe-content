@@ -2,7 +2,7 @@ const ask = require('./util/ask')
 
 const bmiCalculation = (weight, height) => {
   console.log(`wheigth: ${weight} height:${height}`);
-  const bmiResult = weight / (height ^ 2);
+  const bmiResult = weight / (height ** 2);
   return bmiResult;
 }
 
