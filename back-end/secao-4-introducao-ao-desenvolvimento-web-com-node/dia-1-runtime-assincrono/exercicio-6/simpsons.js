@@ -28,10 +28,21 @@ async function removeCharacter(a, b) {
   await fs.writeFile('./simpsons.json', JSON.stringify(characterChosen));
 }
 
+async function CreateFile() {
+  const fileContent = await fs.readFile('./simpsons.json', 'utf-8')
+  const simpsons = JSON.parse(fileContent)
+
+  idToBeRemoved = [1, 2, 3, 4]
+  const characterChosen = simpsons
+    .filter((element) => idToBeRemoved.includes(Number(element.id)));
+  await fs.writeFile('./simpsonFamily.json', JSON.stringify(characterChosen));
+}
+
 main = () => {
   //readAll()
   //getSimpsomId(2).then((simpson) => console.log(simpson))
-  removeCharacter(10, 6)
+  //removeCharacter(10, 6)
+  CreateFile()
 }
 
 main();
