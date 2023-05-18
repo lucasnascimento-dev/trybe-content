@@ -7,7 +7,7 @@
 
 3- Instalaremos a framework express para nos auxiliar na organização da API, diminuindo a quantidade de linhas de código.
   - npm i express@4.17.1 --save-exact;
-  - cersão escolhida para o projeto afim de evitar comportamentos; inesperados;
+  - versão escolhida para o projeto afim de evitar comportamentos inesperados;
   - NÃO ESQUECER DE CRIAR O .gitignore PARA O node_modules;
   
   -- package-lock.json
