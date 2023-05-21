@@ -3,20 +3,16 @@ const validateTeam = require("./middlewares/validateTeam");
 const existingId = require("./middlewares/existingId");
 
 const app = express();
-app.use(express.json()); // Prepara nossa API para receber dados
+const apiCredentials = require('./middlewares/apiCredentials');
 
 const teams = [
-  {
-    id: 1,
-    name: "São Paulo Futebol Clube",
-    initials: "SPF",
-  },
-  {
-    id: 2,
-    name: "Clube Atlético Mineiro",
-    initials: "CAM",
-  },
+  { id: 1, nome: "São Paulo Futebol Clube", sigla: "SPF" },
+  
+  { id: 2, nome: "Sociedade Esportiva Palmeiras", sigla: "PAL" },
 ];
+
+app.use(express.json()); // Prepara nossa API para receber dados
+app.use(apiCredentials);
 
 // Listando times por meio do GET ---------------------------------------------------
 app.get("/teams", (req, res) => res.status(200).json({ teams }));

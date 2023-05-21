@@ -4,7 +4,7 @@ const existingId = (req, res, next) => {
   if (teams.some((element) => element.id === id)) {
     return next(); // Chama o próximo middleware
   } else {
-    res.sendStatus(400); // Ou já responde avisando que deu errado
+    res.sendStatus(400).json({ message: 'Time não encontrado'});
   }
 };
 
