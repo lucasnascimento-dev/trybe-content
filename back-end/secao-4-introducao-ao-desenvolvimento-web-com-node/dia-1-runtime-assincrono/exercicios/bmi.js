@@ -1,15 +1,19 @@
-const weight = 80
-const height = 1.78
+const ask = require('./util/ask')
+const category = require('./util/category')
 
-const bmiCalculation = (weight, height) => {
-  console.log(`wheigth: ${weight} height:${height}`);
-  const bmiResult = weight / (height ^ 2);
+const bmiCalculation = (p, h) => {
+  console.log(`wheigth: ${p} height:${h}`);
+  const bmiResult = p / (h ** 2);
   return bmiResult;
 }
 
-function main() {
+const main = () => {
+  const weight = ask("What’s your weight?(em kg) ");
+  const height = ask("What’s your height?(em m) ");
+
   const bmi = bmiCalculation(weight, height);
-  console.log(`BMI: ${bmi.toFixed(2)}`)
+  const situation = category(bmi)
+  console.log(`BMI: ${bmi.toFixed(2)}\nSITUATION: ${situation}`)
 }
 
 main()

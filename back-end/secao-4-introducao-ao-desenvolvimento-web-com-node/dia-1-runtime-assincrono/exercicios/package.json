@@ -9,5 +9,8 @@
   },
   "keywords": [],
   "author": "Lucas Nascimento",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
