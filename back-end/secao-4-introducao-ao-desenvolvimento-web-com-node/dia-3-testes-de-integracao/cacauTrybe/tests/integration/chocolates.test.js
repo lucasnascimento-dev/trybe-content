@@ -139,16 +139,13 @@ describe("Testando a API Cacau Trybe", function () {
       const response = await chai.request(app).get("/chocolates/total");
 
       expect(response.status).to.be.equal(200);
-
       expect(response.body).to.deep.equal({ totalChocolates: 4 });
     });
   });
 
   describe("Usando o método GET em /chocolates/search", function () {
     it('Retorna os chocolates que contém "Mo" no nome', async function () {
-      const response = await chai
-        .request(app)
-        .get("/chocolates/search?name=Mo");
+      const response = await chai.request(app).get("/chocolates/search?name=Mo");
 
       expect(response.status).to.be.equal(200);
       expect(response.body).to.deep.equal([
@@ -166,9 +163,7 @@ describe("Testando a API Cacau Trybe", function () {
     });
 
     it("Retorna um array vazio ao não encontrar nenhum chocolate", async function () {
-      const response = await chai
-        .request(app)
-        .get("/chocolates/search?name=ZZZ");
+      const response = await chai.request(app).get("/chocolates/search?name=ZZZ");
 
       expect(response.status).to.be.equal(404);
       expect(response.body).to.deep.equal([]);
