@@ -5,3 +5,7 @@
 3 - Após criar o container, acesse a página HTML que está rodando no servidor em seu browser.
   RESPOSTA
   http://localhost:4545/missao_trybe.html
+
+5 - Obtenha o id do container httpd:2.4.54;
+  RESPOSTA
+  docker ps -a ou docker container ls -a
