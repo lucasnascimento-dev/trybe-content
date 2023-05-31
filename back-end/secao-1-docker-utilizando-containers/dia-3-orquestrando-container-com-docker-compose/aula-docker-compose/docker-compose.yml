@@ -5,6 +5,8 @@ services:
     restart: on-failure
     ports:
       - 3000:3000 #primeiro parâmetro é o local, segundo o do container
+    depends_on:
+      - backend
 
   backend:
     build: backend/
@@ -13,6 +15,8 @@ services:
       - 3001:3001
     environment:
       - DB_HOST=database #importante para trabalhar em mais de um ambiente de forma segura
+    depends_on:
+      - database
 
   database:
     image: betrybe/docker-compose-example-database:v1
@@ -20,3 +24,7 @@ services:
 
 # build especifica o path onde tem um Dockerfile a ser bildado
 # image especifica uma imagem local ou a ser baixada
+
+# A dependência entre serviços ficou de modo que o o backend depende
+# do database e o frontend depende do backend, ou seja, a ordem de
+# execução de serviço será: database, backend e frontend.
