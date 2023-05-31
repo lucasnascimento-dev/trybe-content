@@ -4,23 +4,17 @@ services:
     build: frontend/
     restart: on-failure
     ports:
-      - 3000:3000 #primeiro parâmetro é o local, segundo o do container
-    depends_on:
-      - backend
-
+      - 3000:3000
   backend:
     build: backend/
     restart: on-failure
     ports:
       - 3001:3001
     environment:
-      - DB_HOST=database #importante para trabalhar em mais de um ambiente de forma segura
-    depends_on:
-      - database
-
+      - DB_HOST=database
   database:
     image: betrybe/docker-compose-example-database:v1
-    restart: on-feilure
+    restart: on-failure
 
 # build especifica o path onde tem um Dockerfile a ser bildado
 # image especifica uma imagem local ou a ser baixada
