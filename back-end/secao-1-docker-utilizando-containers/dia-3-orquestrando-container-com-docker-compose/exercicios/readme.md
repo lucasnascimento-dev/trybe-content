@@ -28,3 +28,7 @@
 10 - Obtenha o IMAGE ID do servidor;
   RESPOSTA
     docker images
+
+11 - Depois de obter o IMAGE ID, exclua a imagem.
+  RESPOSTA
+    docker rmi <imageID>
