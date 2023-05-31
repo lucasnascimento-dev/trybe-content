@@ -11,9 +11,12 @@ services:
     restart: on-failure
     ports:
       - 3001:3001
+    environment:
+      - DB_HOST=database #importante para trabalhar em mais de um ambiente de forma segura
 
   database:
     image: betrybe/docker-compose-example-database:v1
+    restart: on-feilure
 
 # build especifica o path onde tem um Dockerfile a ser bildado
 # image especifica uma imagem local ou a ser baixada
