@@ -1,0 +1,1 @@
+Para ter fazer o exercício temos que executar o database.sql
